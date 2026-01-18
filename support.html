@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Support | TicketX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="navbar">
+            <a href="index.html" class="logo">TicketX</a>
+            <nav>
+                <a href="movies.html">Movies</a>
+                <a href="offers.html">Offers</a>
+                <a href="support.html">Support</a>
+            </nav>
+            <a href="auth.html" class="signin">Sign In</a>
+        </header>
+
+        <section class="support-page">
+            <h1>Customer Support</h1>
+
+            <div class="support-grid">
+
+                <div class="support-card chat">
+                    <h3>Live Chat</h3>
+                    <div class="chat-box" id="chatBox">
+                        <div class="bot">Hi 👋 How can I help you?</div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="chatInput" placeholder="Type your message">
+                        <button id="sendMsg">Send</button>
+                    </div>
+                </div>
+
+                <div class="support-card">
+                    <h3>Call Support</h3>
+                    <p>Available 10 AM – 8 PM</p>
+                    <button onclick="callSupport()">Call Now</button>
+                </div>
+
+                <div class="support-card">
+                    <h3>Email Support</h3>
+                    <p>support@ticketx.com</p>
+                    <button onclick="emailSupport()">Send Email</button>
+                </div>
+
+            </div>
+
+            <div class="faq">
+                <h2>Quick Help</h2>
+                <p>• How to book tickets?</p>
+                <p>• Payment failed, what to do?</p>
+                <p>• How to cancel booking?</p>
+                <p>• Refund related queries</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 TicketX. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

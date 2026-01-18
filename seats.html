@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Select Seats | TicketX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="navbar">
+            <a href="index.html" class="logo">TicketX</a>
+            <nav>
+                <a href="movies.html">Movies</a>
+                <a href="offers.html">Offers</a>
+                <a href="support.html">Support</a>
+            </nav>
+            <a href="auth.html" class="signin">Sign In</a>
+        </header>
+
+        <section class="seat-page">
+
+            <h1 id="movieTitle"></h1>
+
+            <div class="seat-container">
+
+                <div class="seat-layout">
+                    <div class="screen">SCREEN</div>
+
+                    <div class="row">
+                        <span>A</span>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat booked"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+
+                    <div class="row">
+                        <span>B</span>
+                        <div class="seat"></div>
+                        <div class="seat selected"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+
+                    <div class="row">
+                        <span>C</span>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat booked"></div>
+                        <div class="seat"></div>
+                    </div>
+
+                    <div class="row">
+                        <span>D</span>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+
+                    <div class="row">
+                        <span>E</span>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+
+                    <div class="legend">
+                        <div><span class="l available"></span>Available</div>
+                        <div><span class="l booked"></span>Booked</div>
+                        <div><span class="l selected"></span>Selected</div>
+                    </div>
+                </div>
+
+                <div class="summary">
+                    <h3>Booking Summary</h3>
+                    <p>Seats Selected: <span id="count">1</span></p>
+                    <p>Price per Seat: ₹200</p>
+                    <h2>Total: ₹<span id="total">200</span></h2>
+                    <button id="payBtn">Proceed to Payment</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 TicketX. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

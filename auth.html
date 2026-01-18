@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In | TicketX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="navbar">
+            <a href="index.html" class="logo">TicketX</a>
+            <nav>
+                <a href="movies.html">Movies</a>
+                <a href="offers.html">Offers</a>
+                <a href="support.html">Support</a>
+            </nav>
+        </header>
+
+        <section class="auth-page">
+
+            <div class="auth-box">
+
+                <h2 id="authTitle">Sign In</h2>
+
+                <input type="text" placeholder="Email or Phone" id="user">
+                <input type="password" placeholder="Password" id="pass">
+
+                <button id="authBtn">Sign In</button>
+
+                <p class="link" onclick="forgot()">Forgot Password?</p>
+
+                <p class="switch">
+                    Don’t have an account?
+                    <span onclick="toggleAuth()">Register</span>
+                </p>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 TicketX. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movies | TicketX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="navbar">
+            <a href="index.html" class="logo">TicketX</a>
+            <nav>
+                <a href="movies.html">Movies</a>
+                <a href="offers.html">Offers</a>
+                <a href="support.html">Support</a>
+            </nav>
+            <a href="auth.html" class="signin">Sign In</a>
+        </header>
+
+        <section class="movies-page">
+            <h1>Now Showing</h1>
+
+            <div class="movies-grid">
+
+                <div class="movie-card">
+                    <img src="Dhurandhar.jpg">
+                    <h3>Dhurandhar</h3>
+                    <p>Action/Adventure</p>
+                    <span>U/A • 3h 32m • Hindi</span>
+                    <button onclick="bookMovie('Dhurandhar')">Book Show</button>
+                </div>
+
+                <div class="movie-card">
+                    <img src="Ek Deewane ki Deewaniyat.jpg">
+                    <h3>Ek Deewane ki Deewaniyat</h3>
+                    <p>Romance</p>
+                    <span>U/A • 2h 21m • Hindi</span>
+                    <button onclick="bookMovie('Ek Deewane ki Deewaniyat')">Book Show</button>
+                </div>
+
+                <div class="movie-card">
+                    <img src="Tere ishk mein.jpg">
+                    <h3>Tere ishk mein</h3>
+                    <p>Romance/Musical</p>
+                    <span>U • 2h 47m • Hindi</span>
+                    <button onclick="bookMovie('Tere ishk mein')">Book Show</button>
+                </div>
+
+                <div class="movie-card">
+                    <img src="Zootopia-2.jpg">
+                    <h3>Zootopia-2</h3>
+                    <p> Family/Comedy</p>
+                    <span>A • 1h 50m • Hindi/English</span>
+                    <button onclick="bookMovie('Zootopia-2')">Book Show</button>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 TicketX. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

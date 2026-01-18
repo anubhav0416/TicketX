@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TicketX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="app">
+        <header class="navbar">
+            <a href="index.html" class="logo">TicketX</a>
+            <nav>
+                <a href="movies.html">Movies</a>
+                <a href="offers.html">Offers</a>
+                <a href="support.html">Support</a>
+                <a href="search.html">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>search</p>
+                    </div>
+                </a>
+            </nav>
+            <a href="auth.html" class="signin">Sign In</a>
+        </header>
+
+        <section class="hero" style="background-image:url(hero.jpg)">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Book Your<br>Movie Tickets<br>Faster</h1>
+                <p>TicketX</p>
+
+                <div class="search-box">
+                    <input type="date" id="date">
+
+                    <select id="slot">
+                        <option value="">Select Time</option>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                        <option>Evening</option>
+                        <option>Night</option>
+                    </select>
+
+                    <a id="findTickets" href="movies.html"><button>Find Tickets</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Upcoming Movies</h2>
+
+            <div class="movie-list">
+                <div class="movie A">
+                    <div class="imga"></div>
+                    <h3>Border 2</h3>
+                    <span>Releasing: 23 January 2026</span>
+                </div>
+
+                <div class="movie B">
+                    <div class="imgb"></div>
+                    <h3>Mahavatar</h3>
+                    <span>Releasing: Christmas 2026</span>
+                </div>
+
+                <div class="movie C">
+                    <div class="imgc"></div>
+                    <h3>Avengers: Doomsday</h3>
+                    <span>Releasing: 18 December 2026</span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 TicketX. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
